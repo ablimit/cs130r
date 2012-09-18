@@ -1,4 +1,3 @@
-
 #  BMI (body mass index) example for Sep 18
 # Formula -->   BMI = (weight in punds * 703) / (height in inches)^2
 
@@ -14,13 +13,13 @@ bmi = 22.0
 print("Your Body Mass Index is " + str(bmi))
 
 if bmi < 18.5:
-    print("Eat more protein. We are not in a food crisis, are we ? ")
+    print("Eat more protein.")
 else:
     if bmi < 25.0:
-	print("Awesome ! Just keep your lifestyle this way.")
+	print("Awesome ! Just keep your lifestyle.")
     else:
 	if bmi < 30.0:
-	    print("Resist some pizza and snacks, then you'll be fine")
+	    print("Resist some pizza and snacks.")
 	else:
-	    print("It's time to start training for an Ironman ! ")
+	    print("It's time to start training for an Ironman !")
 
