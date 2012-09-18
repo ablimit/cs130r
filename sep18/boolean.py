@@ -1,8 +1,4 @@
 
-#  Booleans 
-# precedence comp < +,- < *,/,//,% > +x,-x > ** > (expr)
-
-# True or False 
 
 # we are going to get a string "True" here
 print (True) 

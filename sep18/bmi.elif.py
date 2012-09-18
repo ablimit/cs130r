@@ -12,11 +12,11 @@ bmi = 22.0
 print("Your Body Mass Index is " + str(bmi))
 
 if bmi < 18.5:
-    print(" Eat more protin. We are not in a food crisis, are we ? ")
+    print(" Eat more protin.")
 elif bmi < 25.0:
-    print("Awesome ! Just keep your lifestyle this way.")
+    print("Awesome ! Just stick to your lifestyle.")
 elif bmi < 30.0:
-    print("Resist some pizza and snacks, then you'll be fine")
+    print("Resist some pizza and snacks.")
 else:
     print("It's time to start training for an Ironman Triathlon !")
 
