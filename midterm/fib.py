@@ -15,11 +15,11 @@ while i < n:
     fib_list.append(c)
     i = i+1    # update counter
 
+# print("The fiabonacci number is " + str(b))
 # print(fib_list)
 
+# next we print them in reverse order
+print("Fibonacci numbers in reverse order ")
 for i in range(n,0,-1):
     print(fib_list[i])
-
-
-# print("The fibonacci number is " + str(b))
 
