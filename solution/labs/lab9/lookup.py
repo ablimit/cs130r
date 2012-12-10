@@ -3,23 +3,16 @@
 import sys
 
 
-if len(sys.argv) <2:
-    print ("Error: Missing param.")
-    print("Usage: python3 lookup.py [grade.csv]")
-    sys.exit()
-
-
-f = open(sys.argv[1], 'r')
 grades = {}
 
-for line in f:
-    sp = line.strip().split(',')
-    name = sp[0]
-    grade = int(sp[1])
-    grades[name] = grade
-
-f.close()
-
+def readfile():
+    f = open(sys.argv[1], 'r')
+    for line in f:
+        sp = line.strip().split(',')
+        name = sp[0]
+        grade = int(sp[1])
+        grades[name] = grade
+    f.close()
 
 def students(x):
     """Returns a list of student names who got a grade of x
@@ -32,7 +25,17 @@ def students(x):
             student_list.append(key)
     return student_list
 
-print(students(90))
-print(students(89))
-print(students(93))
-print(students(99))
+def main():
+    if len(sys.argv) <2:
+        print ("Error: Missing param.")
+        print("Usage: python3 lookup.py [grade.csv]")
+        sys.exit(0)
+
+    readfile()
+    print(students(90))
+    print(students(89))
+    print(students(93))
+    print(students(99))
+
+# main function
+main()
