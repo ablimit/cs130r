@@ -1,5 +1,4 @@
-
-jason = {"first" : "Jason", "last": "Smith" , "age": 25 , "phone": 4046171581, "dept": "Computer Science"}
+jason = {"first" : "Jason", "last": "Smith" , "age": 25 , "phone": 4041234567, "dept": "Computer Science"}
 
 # print(jason)
 
